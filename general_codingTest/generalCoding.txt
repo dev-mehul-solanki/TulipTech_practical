@@ -1,0 +1,14 @@
+let arr = ["Tulip", "Tech", "Limited", "Uk"];
+let lengthArr = [];
+for(let i =0;i<arr.length;i++){
+    lengthArr.push(arr[i].length)
+}
+let tmp = lengthArr.sort(function(a,b){return b-a})[0];
+let result='';
+for(let t=0;t<tmp;t++){
+    for(let z=0;z<arr.length;z++){
+        if(arr[z].charAt(t)){
+            result += arr[z].charAt(t);
+        }
+    }
+}
